@@ -1,0 +1,124 @@
+body{
+    border-left-width: 10px ;
+    border-left-style:outset;
+    border-left-color: orange;
+    border-right-width: 10px;
+    border-right-style: outset;
+    border-right-color: rgb(13, 165, 13);
+    border-top-width: 10px;
+    border-top-style: outset;
+    border-top-color: white;
+    margin: 0;
+    padding: 0; 
+}
+.first{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom:20px;
+}
+.happy{
+    background-color: orange;
+}
+.independence{
+    background-color: white;
+}
+.day{
+    background-color: green;
+}
+.sky{
+    width:100%;
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    left:1150px;
+    bottom:800px;
+    animation-name: sun;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+@keyframes sun{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+.city{
+    width: 125%;
+    position:relative;
+    bottom: 800px;
+    z-index: -1;
+    animation-name: city;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes city{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-500px);
+    }
+}
+.road{
+    position:relative;
+    bottom:804px;
+    animation-name: road;
+    z-index: -1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes road{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+       transform: translateX(-3400px) 
+    }
+}
+.car{
+    width:500px;
+    position: relative;
+    bottom: 1200px;
+}
+.wheel{
+    width: 90px;
+    position: relative;
+    bottom: 1300px;
+    left:460px;
+    animation-name: wheel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
+}
+.tyre{
+    width:90px;
+    position:relative;
+    bottom:1395px;
+    left:765px;
+    animation-name: wheel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.flag{
+    width:50px;
+    position: relative;
+    bottom: 1550px;
+    left:800px;
+}
